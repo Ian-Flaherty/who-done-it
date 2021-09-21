@@ -32,11 +32,13 @@ export default function Classmates(props) {
   
     return (
       <div className='classmates'>
-        {classmates.map((name) => (
+        {classmates.map((image) => (
           
-          <p>
-            {name.fields?.name}
-          </p>
+          // eslint-disable-next-line jsx-a11y/alt-text
+          <img style={{ width: 210, height: 210, borderRadius: 400 / 2 }}
+            src=
+            {image.fields?.image}
+          />
         ))}
       </div>
     )
