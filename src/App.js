@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Start from './components/Start';
 import Winners from './components/Winners';
-
+// import Classmates from './components/ClassMates';
 
 
 function App() {
@@ -26,7 +26,8 @@ function App() {
       <div className= 'Start'>
         < Nav />
           <Route path= '/Start'>
-          < Start />
+            < Start />
+            
           < Nav />
           </Route>
         </div>
