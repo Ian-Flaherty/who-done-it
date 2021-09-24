@@ -41,7 +41,7 @@ export default function QuestionSix() {
 
   return (
     <>
-      <h1>Who is the most outgoing?</h1>
+      <h1>Who is most likely to go live on mars?</h1>
       <Video />
       <div>
         

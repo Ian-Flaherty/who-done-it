@@ -56,31 +56,31 @@ const Winners = () => {
           temp2 = classmate;
         }
         if (classmate.fields.questionthree > temp.fields.questionthree) {
-          temp2 = classmate;
+          temp3 = classmate;
         }
         if (classmate.fields.questionfour > temp.fields.questionfive) {
-          temp2 = classmate;
+          temp4 = classmate;
         }
         if (classmate.fields.questionsix > temp.fields.questionsix) {
-          temp2 = classmate;
+          temp5 = classmate;
         }
         if (classmate.fields.questionseven > temp.fields.questionseven) {
-          temp2 = classmate;
+          temp6 = classmate;
         }
         if (classmate.fields.questioneight > temp.fields.questioneight) {
-          temp2 = classmate;
+          temp7 = classmate;
         }
         if (classmate.fields.questionnine > temp.fields.questionnine) {
-          temp2 = classmate;
+          temp8 = classmate;
         }
         if (classmate.fields.questionten > temp.fields.questionten) {
-          temp2 = classmate;
+          temp9 = classmate;
         }
         if (classmate.fields.questioneleven > temp.fields.questioneleven) {
-          temp2 = classmate;
+          temp10 = classmate;
         }
         if (classmate.fields.questiontwelve > temp.fields.questiontwelve) {
-          temp2 = classmate;
+          temp11 = classmate;
         }
       });
       console.log("this is the winner", temp);
@@ -120,19 +120,19 @@ const Winners = () => {
       </video>
       <div className='results' >
           
-      <div overallWinner="overallWinner">
+      {/* <div overallWinner="Winner-One">
         <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
           classname="Winner-Overall"
           src={winner.fields?.image}
           alt="me"
-        />
+        /> */}
         <h3>Who do you want to work with outside of GA</h3>
       </div>
       <div>
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
-          classname="Winner-Two"
+          classname="Winner-Overall"
           src={winnertwo.fields?.image}
           alt="me"
         />
@@ -141,7 +141,7 @@ const Winners = () => {
       <div>
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
-          classname="Winner-Three"
+          classname="Winner-Overall"
           src={winnerthree.fields?.image}
           alt="me"
         />
@@ -163,7 +163,7 @@ const Winners = () => {
           src={winnerfive.fields?.image}
           alt="me"
         />
-        <h3>Who is the most outgoing?</h3>
+        <h3>Who is most likely to go live on mars?</h3>
       </div>
       <div>
       <img
@@ -219,7 +219,7 @@ const Winners = () => {
         />
         <h3>Who is the biggest Soccer fan?</h3>
       </div>
-  </div>
+  {/* </div> */}
     </>
   );
 };
