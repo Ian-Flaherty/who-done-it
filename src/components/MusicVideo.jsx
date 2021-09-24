@@ -8,6 +8,7 @@ function musicVideo() {
     autoPlay
     loop
     muted
+      
     style= {{
       position: 'absolute',
       width: '100%',

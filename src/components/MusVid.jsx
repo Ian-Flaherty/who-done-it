@@ -2,12 +2,10 @@ import Musicvideo from "./Video/Musicvideo.mp4";
 
 function Video() {
   return (
-
-
     <video
       autoPlay
       loop
-      
+      muted
       style={{
         position: "absolute",
         width: "100%",
@@ -21,7 +19,7 @@ function Video() {
     >
       <source src={Musicvideo} type="video/mp4" />
     </video>
-  )
+  );
 }
 
 export default Video;

@@ -1,48 +1,48 @@
-// import React from "react";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
+const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
+const airtableKey = process.env.REACT_APP_AIRTABLE_Key;
+const URL = `https://api.airtable.com/v0/${airtableBase}/ClassMates`;
 
 
-// const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
-// const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
-// const URL = `https://api.airtable.com/v0/${airtableBase}/ClassMates`;
-// const URL2 = `https://api.airtable.com/v0/${airtableBase}/Questions`;
-// const config = {
-//   headers: {
-//     Authorization: `Bearer ${airtableKey}`,
-//   },
-// };
+const config = {
+  headers: {
+    Authorization: `Bearer ${airtableKey}`,
+  },
+};
+
 export default function Classmates(props) {
-  // const [classmates, setClassmates] = useState([]);
-  const { classmates, loading} = props;
+
+  const { classmates, setLoading} = props;
+  const handleSubmit = async (e) => {
+    const id = e.target.title
+    const student = classmates.find((classmate) =>
+      classmate.id === id);
+        console.log(student)
+    const fields = {
+      'fields': {
+      'overall': student.fields.overall + 1
+      }
+    }
+    await axios.patch(`${URL}/${id}`, fields, config)
+    setLoading(previousState => !previousState)
+  };
   
-  // useEffect(() => {
-  //   const FetchClassmates = async () => {
-  //     const res = await axios.get(URL, config);
-  //     setClassmates(res.data.records);
-  //     console.log(res.data.records);
-  //     setLoading(false);
-  //   }
-    
-  //   FetchClassmates();
-  // }, []);
-  
-  if (loading) return
-  <div></div>
   
     return (
       <div className='classmates'>
         {classmates.map((image) => (
-          
+        
           // eslint-disable-next-line jsx-a11y/alt-text
-          <img style={{ width: 210, height: 210, borderRadius: 400 / 2 }}
+          <Link to='/Questiontwo' onClick={handleSubmit} style={{ display: 'inline-block', width: 170, height: 170, borderRadius: 400 / 2, }}><img style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
             src=
-            {image.fields?.image}
-          />
+              {image.fields?.image}
+            title={image.id}
+          /></Link>
+            
         ))}
       </div>
     )
   }
 
 
-  

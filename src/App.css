@@ -13,8 +13,8 @@
   }
 }
 h1 {
-  color:black;
-  font-size: 100px;
+  color:rgb(190, 63, 190);
+  font-size: 80px;
 }
 .App-header {
   background-color: #282c34;
@@ -38,4 +38,7 @@ h1 {
   to {
     transform: rotate(360deg);
   }
+}
+p {
+color: white;
 }

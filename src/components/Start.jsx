@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Questions from "./Questions";
 import Video from './MusVid';
 
+
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_Key;
 const URL = `https://api.airtable.com/v0/${airtableBase}/ClassMates`;
@@ -16,6 +17,7 @@ const config = {
     Authorization: `Bearer ${airtableKey}`,
   },
 };
+///////////////////
 
 export default function Start() {
   const [questions, setQuestions] = useState([]);
@@ -28,25 +30,26 @@ export default function Start() {
       setQuestions(res.data.records);
       const response = await axios.get(URL, config);
       setClassmates(response.data.records);
-      setLoading(false)
+      
     };
     fetchQuestions();
-  }, []);
+  }, [loading]);
 
-  if (questions) {
+  
     return (
       <>
-        <h1>Select the person who best fits the question.</h1>
+        <h1>Who is your favorite classmate?</h1>
         < Video />
         <div>
           <Classmates classmates={classmates} 
             loading={loading}
-            // setLoading={setLoading}
+            setLoading={setLoading}
           />
-          <Questions questions={questions} />
+        
         </div>
+        
       </>
     );
   }
-}
+
 
