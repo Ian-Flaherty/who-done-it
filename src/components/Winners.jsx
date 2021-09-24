@@ -1,6 +1,6 @@
 import React from "react";
 import Museimp from "./Video/Museimp.mp4";
-import "./Home.css";
+import "./Winners.css"
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -105,6 +105,7 @@ const Winners = () => {
       <video
         autoPlay
         loop
+        muted
         style={{
           position: "absolute",
           width: "100%",
@@ -118,108 +119,109 @@ const Winners = () => {
       >
         <source src={Museimp} type="video/mp4" />
       </video>
-      <div className='results' >
-          
-      {/* <div overallWinner="Winner-One">
+      <div className='container-winner' >
+          <div className='winner-container'>
+      <div className= 'block'>
         <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
-          classname="Winner-Overall"
+          className="Winner-Overall"
           src={winner.fields?.image}
           alt="me"
-        /> */}
-        <h3>Who do you want to work with outside of GA</h3>
-      </div>
-      <div>
+          />
+          <h3 className='winner-tac'>Who do you want to work with outside of GA</h3>
+        </div>
+      <div className='block'>
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
-          classname="Winner-Overall"
+          className="Winner-Overall"
           src={winnertwo.fields?.image}
           alt="me"
         />
-        <h3>Who would you want to grab a beer with?</h3>
+        <h3 className= 'winner-tac'>Who would you want to grab a beer with?</h3>
       </div>
-      <div>
+      <div class='block'>
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
-          classname="Winner-Overall"
+          className="Winner-Overall"
           src={winnerthree.fields?.image}
           alt="me"
         />
-        <h3>Who has the best projects?</h3>
+        <h3 className= 'winner-tac'>Who has the best projects?</h3>
       </div>
-      <div>
+      <div className='block'>
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
-          classname="Winner-Four"
+          className="Winner-Overall"
           src={winnerfour.fields?.image}
           alt="me"
         />
-        <h3>Who do you think will change the world?</h3>
+        <h3 className= 'winner-tac'>Who do you think will change the world?</h3>
       </div>
-      <div>
+      <div className='block'>
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
-          classname="Winner-Five"
+          className="Winner-Overall"
           src={winnerfive.fields?.image}
           alt="me"
         />
-        <h3>Who is most likely to go live on mars?</h3>
+        <h3 className= 'winner-tac'>Who is most likely to go live on mars?</h3>
       </div>
-      <div>
+      <div className='block'>
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
-          classname="Winner-Six"
+          className="Winner-Overall"
           src={winnersix.fields?.image}
           alt="me"
         />
-        <h3>Who is most likely to become famous?</h3>
+        <h3 className= 'winner-tac'>Who is most likely to become famous?</h3>
       </div>
-      <div>
+      <div className='block'>
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
-          classname="Winner-Seven"
+          className="Winner-Overall"
           src={winnerseven.fields?.image}
           alt="me"
         />
-        <h3>Who is best dressed?</h3>
+        <h3 className='winner-tac'>Who is best dressed?</h3>
       </div>
-      <div>
+      <div className='block'>
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
-          classname="Winner-Eight"
+          className="Winner-Overall"
           src={winnereight.fields?.image}
           alt="me"
         />
-        <h3>Who do you go to help for?</h3>
+        <h3 className= 'winner-tac'> Who do you go to help for?</h3>
       </div>
-      <div>
+      <div className='block'>
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
-          classname="Winner-Nine"
+          className="Winner-Overall"
           src={winnernine.fields?.image}
           alt="me"
         />
-        <h3>Who is the most outgoing?</h3>
+        <h3 className= 'winner-tac'>Who is the most outgoing?</h3>
       </div>
-      <div>
+      <div className='block'>
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
-          classname="Winner-Ten"
+          className="Winner-Overall"
           src={winnerten.fields?.image}
           alt="me"
         />
-        <h3>Who is the most interesting classmate?</h3>
+        <h3 className= 'winner-tac'>Who is the most interesting classmate?</h3>
       </div>
-      <div>
+      <div className='block'>
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
-          classname="Winner-Eleven"
+          className="Winner-Overall"
           src={winnereleven.fields?.image}
           alt="me"
         />
-        <h3>Who is the biggest Soccer fan?</h3>
+        <h3 className= 'winner-tac'>Who is the biggest Soccer fan?</h3>
       </div>
-  {/* </div> */}
+        </div>
+        </div>
     </>
   );
 };

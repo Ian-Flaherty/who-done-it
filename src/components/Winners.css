@@ -1,7 +1,30 @@
-h1 {
-  color:azure
+.container-winner {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+.winner-container {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 43px;
+
 }
 
-.results {
-  display: grid;
+.block {
+  width: 365px;
+  
 }
+.winner-tac {
+  height: 75px;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.Winner-Overall {
+margin-left: 85px;
+
+}
+

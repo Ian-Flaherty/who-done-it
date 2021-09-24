@@ -40,7 +40,7 @@ const Home = () => {
       <video
         autoPlay
         loop
-        
+        muted
         style={{
           position: "absolute",
           width: "100%",
@@ -68,15 +68,17 @@ const Home = () => {
           </p>
         </div>
         <br></br>
-        <div overallWinner="overallWinner">
+        <div className= 'image-and-tag' overall-winner="overall-winner">
           <img
             style={{ width: 400, height: 400, borderRadius: 400 / 2 }}
-            classname="Winner-Overall"
+            className="home-winner-img"
             src={winner.fields?.image}
             alt="me"
-          />
+            />
         </div>
-        <h1>Winner Overall</h1>
+          
+            <h1 className='done'>Winner Overall</h1>
+            
       </div>
     </>
   );

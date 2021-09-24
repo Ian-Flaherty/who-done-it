@@ -1,6 +1,27 @@
-.rules {
-  size: 100px;
-  color: white;
-  font-style: oblique;
+.content {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
   
+}
+.image-and-tag {
+  display:flex;
+  justify-content: center;
+  
+  
+}
+
+.home-winner-image {
+  display: block;
+  justify-content: center;
+
+  }
+  .rules {
+    display: flex;
+    justify-content: center;
+  }
+
+.done {
+  display: flex;
+  justify-content: center;
 }

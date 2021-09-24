@@ -24,13 +24,12 @@ export default function QuestionTwo() {
   const [loading, setLoading] = useState(false);
   const handleSubmit = async (e) => {
     const id = e.target.title
-    const student = classmates.find((classmate) =>
-      classmate.id === id);
-        console.log(student)
+    const student = classmates.find((classmate) => classmate.id === id);
+    console.log(student)
     const fields = {
-      'fields': {
-      'questiontwo': student.fields.questiontwo + 1
-      }
+      fields: {
+      questiontwo: student.fields.questiontwo + 1
+      },
     }
     await axios.patch(`${URL}/${id}`, fields, config)
     setLoading(previousState => !previousState)
