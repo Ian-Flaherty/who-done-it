@@ -49,7 +49,7 @@ export default function QuestionTwo() {
     return (
       <>
         <h1>Who do you want to work withoutside of GA?</h1>
-        < Video />
+        {/* < Video /> */}
         <div>
          {/* <Classmates classmates={classmates} 
             loading={loading}

@@ -42,7 +42,7 @@ export default function QuestionThree() {
   return (
     <>
       <h1>Who would you want to grab a beer with?</h1>
-      <Video />
+      {/* <Video /> */}
       <div>
         
         <div className='classmates'>
