@@ -59,29 +59,32 @@ const Winners = () => {
         if (classmate.fields.questionthree > temp3.fields.questionthree) {
           temp3 = classmate;
         }
-        if (classmate.fields?.questionfour > temp4.fields.questionfive) {
+        if (classmate.fields?.questionfour > temp4.fields.questionfour) {
           temp4 = classmate;
         }
-        if (classmate.fields?.questionsix > temp5.fields.questionsix) {
+        if (classmate.fields?.questionfive > temp5.fields.questionfive) {
           temp5 = classmate;
         }
-        if (classmate.fields?.questionseven > temp6.fields.questionseven) {
+        if (classmate.fields?.questionsix > temp6.fields.questionsix) {
           temp6 = classmate;
         }
-        if (classmate.fields?.questioneight > temp7.fields.questioneight) {
+        if (classmate.fields?.questionseven > temp7.fields.questionseven) {
           temp7 = classmate;
         }
-        if (classmate.fields.questionnine > temp8.fields.questionnine) {
+        if (classmate.fields?.questioneight > temp8.fields.questioneight) {
           temp8 = classmate;
         }
-        if (classmate.fields.questionten > temp9.fields.questionten) {
+        if (classmate.fields.questionnine > temp9.fields.questionnine) {
           temp9 = classmate;
         }
-        if (classmate.fields.questioneleven > temp10.fields.questioneleven) {
+        if (classmate.fields.questionten > temp10.fields.questionten) {
           temp10 = classmate;
         }
-        if (classmate.fields.questiontwelve > temp11.fields.questiontwelve) {
+        if (classmate.fields.questioneleven > temp11.fields.questioneleven) {
           temp11 = classmate;
+        }
+        if (classmate.fields.questiontwelve > temp12.fields.questiontwelve) {
+          temp12 = classmate;
         }
         
       });
@@ -126,7 +129,7 @@ const Winners = () => {
         <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
           className="Winner-Overall"
-          src={winner.fields?.image}
+          src={winnertwo.fields?.image}
           alt="me"
           />
           <h3 className='winner-tac'>Who do you want to work with outside of GA</h3>
@@ -135,7 +138,7 @@ const Winners = () => {
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
           className="Winner-Overall"
-          src={winnertwo.fields?.image}
+          src={winnerthree.fields?.image}
           alt="me"
         />
         <h3 className= 'winner-tac'>Who would you want to grab a beer with?</h3>
@@ -144,7 +147,7 @@ const Winners = () => {
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
           className="Winner-Overall"
-          src={winnerthree.fields?.image}
+          src={winnerfour.fields?.image}
           alt="me"
         />
         <h3 className= 'winner-tac'>Who has the best projects?</h3>
@@ -153,7 +156,7 @@ const Winners = () => {
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
           className="Winner-Overall"
-          src={winnerfour.fields?.image}
+          src={winnerfive.fields?.image}
           alt="me"
         />
         <h3 className= 'winner-tac'>Who do you think will change the world?</h3>
@@ -162,7 +165,7 @@ const Winners = () => {
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
           className="Winner-Overall"
-          src={winnerfive.fields?.image}
+          src={winnersix.fields?.image}
           alt="me"
         />
         <h3 className= 'winner-tac'>Who is most likely to go live on mars?</h3>
@@ -171,7 +174,7 @@ const Winners = () => {
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
           className="Winner-Overall"
-          src={winnersix.fields?.image}
+          src={winnerseven.fields?.image}
           alt="me"
         />
         <h3 className= 'winner-tac'>Who is most likely to become famous?</h3>
@@ -180,7 +183,7 @@ const Winners = () => {
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
           className="Winner-Overall"
-          src={winnerseven.fields?.image}
+          src={winnereight.fields?.image}
           alt="me"
         />
         <h3 className='winner-tac'>Who is best dressed?</h3>
@@ -189,7 +192,7 @@ const Winners = () => {
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
           className="Winner-Overall"
-          src={winnereight.fields?.image}
+          src={winnernine.fields?.image}
           alt="me"
         />
         <h3 className= 'winner-tac'> Who do you go to help for?</h3>
@@ -198,7 +201,7 @@ const Winners = () => {
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
           className="Winner-Overall"
-          src={winnernine.fields?.image}
+          src={winnerten.fields?.image}
           alt="me"
         />
         <h3 className= 'winner-tac'>Who is the most outgoing?</h3>
@@ -207,7 +210,7 @@ const Winners = () => {
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
           className="Winner-Overall"
-          src={winnerten.fields?.image}
+          src={winnereleven.fields?.image}
           alt="me"
         />
         <h3 className= 'winner-tac'>Who is the most interesting classmate?</h3>
@@ -216,7 +219,7 @@ const Winners = () => {
       <img
           style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
           className="Winner-Overall"
-          src={winnereleven.fields?.image}
+          src={winnertwelve.fields?.image}
           alt="me"
         />
         <h3 className= 'winner-tac'>Who is the biggest Soccer fan?</h3>
