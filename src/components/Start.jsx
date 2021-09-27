@@ -2,7 +2,6 @@ import React from "react";
 import axios from "axios";
 import Classmates from './ClassMates';
 import { useEffect, useState } from "react";
-import Questions from "./Questions";
 import Video from './MusVid';
 
 

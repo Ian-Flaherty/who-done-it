@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.af6be2e0.chunk.css",
+    "main.js": "/static/js/main.f7b8229a.chunk.js",
+    "main.js.map": "/static/js/main.f7b8229a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5101827d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5101827d.js.map",
+    "static/js/2.439f47cd.chunk.js": "/static/js/2.439f47cd.chunk.js",
+    "static/js/2.439f47cd.chunk.js.map": "/static/js/2.439f47cd.chunk.js.map",
+    "static/js/3.643bb5b5.chunk.js": "/static/js/3.643bb5b5.chunk.js",
+    "static/js/3.643bb5b5.chunk.js.map": "/static/js/3.643bb5b5.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.af6be2e0.chunk.css.map": "/static/css/main.af6be2e0.chunk.css.map",
+    "static/js/2.439f47cd.chunk.js.LICENSE.txt": "/static/js/2.439f47cd.chunk.js.LICENSE.txt",
+    "static/media/Museimp.236fa39f.mp4": "/static/media/Museimp.236fa39f.mp4",
+    "static/media/Musicvideo.bc7d58bd.mp4": "/static/media/Musicvideo.bc7d58bd.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5101827d.js",
+    "static/js/2.439f47cd.chunk.js",
+    "static/css/main.af6be2e0.chunk.css",
+    "static/js/main.f7b8229a.chunk.js"
+  ]
+}
