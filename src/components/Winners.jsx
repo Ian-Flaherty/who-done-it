@@ -31,7 +31,8 @@ const Winners = () => {
   const [winnereleven, setWinnereleven] = useState([]);
   const [winnertwelve, setWinnertwelve] = useState([]);
   
-  
+  console.log(setLoading)
+  console.log(winnertwelve)
   useEffect(() => {
     const fetchWinner = async () => {
       const res = await axios.get(URL, config);
@@ -83,7 +84,7 @@ const Winners = () => {
           temp11 = classmate;
         }
       });
-      console.log("this is the winner", temp);
+      console.log(victor);
       setWinner(temp);
       setWinnertwo(temp2);
       setWinnerthree(temp3);

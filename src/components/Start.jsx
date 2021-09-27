@@ -23,7 +23,7 @@ export default function Start() {
   const [questions, setQuestions] = useState([]);
   const [classmates, setClassmates] = useState([]);
   const [loading, setLoading] = useState(false);
-
+  console.log(questions);
   useEffect(() => {
     const fetchQuestions = async () => {
       const res = await axios.get(URL2, config);
