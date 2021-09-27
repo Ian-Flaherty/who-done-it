@@ -40,7 +40,7 @@ const Home = () => {
       <video
         autoPlay
         loop
-        muted
+        
         style={{
           position: "absolute",
           width: "100%",
@@ -50,6 +50,7 @@ const Home = () => {
           objectFit: "cover",
           transform: "translate(-50%, -50%)",
           zIndex: "-1",
+        
         }}
       >
         <source src={Musicvideo} type="video/mp4" />
