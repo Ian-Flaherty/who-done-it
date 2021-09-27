@@ -29,7 +29,9 @@ const Home = () => {
           temp = classmate;
         }
       });
-      console.log("this is the winner", temp);
+      console.log(victor);
+      console.log(setLoading);
+      
       setWinner(temp);
     };
     fetchWinner();

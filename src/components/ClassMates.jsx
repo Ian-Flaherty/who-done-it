@@ -31,10 +31,10 @@ export default function Classmates(props) {
   
     return (
       <div className='classmates'>
-        {classmates.map((image) => (
+        {classmates.map((image, index) => (
         
           // eslint-disable-next-line jsx-a11y/alt-text
-          <Link to='/Questiontwo' onClick={handleSubmit} style={{ display: 'inline-block', width: 170, height: 170, borderRadius: 400 / 2, }}><img style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
+          <Link key={index} to='/Questiontwo' onClick={handleSubmit} style={{ display: 'inline-block', width: 170, height: 170, borderRadius: 400 / 2, }}><img style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
             src=
               {image.fields?.image}
             title={image.id}
