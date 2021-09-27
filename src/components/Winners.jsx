@@ -31,8 +31,8 @@ const Winners = () => {
   const [winnereleven, setWinnereleven] = useState([]);
   const [winnertwelve, setWinnertwelve] = useState([]);
   
-  console.log(setLoading)
-  console.log(winnertwelve)
+  // console.log(setLoading)
+  // console.log(winnertwelve)
   useEffect(() => {
     const fetchWinner = async () => {
       const res = await axios.get(URL, config);
@@ -53,38 +53,38 @@ const Winners = () => {
         if (classmate.fields.questionone > temp.fields.questionone) {
           temp = classmate;
         }
-        if (classmate.fields.questiontwo > temp.fields.questiontwo) {
+        if (classmate.fields.questiontwo > temp2.fields.questiontwo) {
           temp2 = classmate;
         }
-        if (classmate.fields.questionthree > temp.fields.questionthree) {
+        if (classmate.fields.questionthree > temp3.fields.questionthree) {
           temp3 = classmate;
         }
-        if (classmate.fields.questionfour > temp.fields.questionfive) {
+        if (classmate.fields?.questionfour > temp4.fields.questionfive) {
           temp4 = classmate;
         }
-        if (classmate.fields.questionsix > temp.fields.questionsix) {
+        if (classmate.fields?.questionsix > temp5.fields.questionsix) {
           temp5 = classmate;
         }
-        if (classmate.fields.questionseven > temp.fields.questionseven) {
+        if (classmate.fields?.questionseven > temp6.fields.questionseven) {
           temp6 = classmate;
         }
-        if (classmate.fields.questioneight > temp.fields.questioneight) {
+        if (classmate.fields?.questioneight > temp7.fields.questioneight) {
           temp7 = classmate;
         }
-        if (classmate.fields.questionnine > temp.fields.questionnine) {
+        if (classmate.fields.questionnine > temp8.fields.questionnine) {
           temp8 = classmate;
         }
-        if (classmate.fields.questionten > temp.fields.questionten) {
+        if (classmate.fields.questionten > temp9.fields.questionten) {
           temp9 = classmate;
         }
-        if (classmate.fields.questioneleven > temp.fields.questioneleven) {
+        if (classmate.fields.questioneleven > temp10.fields.questioneleven) {
           temp10 = classmate;
         }
-        if (classmate.fields.questiontwelve > temp.fields.questiontwelve) {
+        if (classmate.fields.questiontwelve > temp11.fields.questiontwelve) {
           temp11 = classmate;
         }
+        
       });
-      console.log(victor);
       setWinner(temp);
       setWinnertwo(temp2);
       setWinnerthree(temp3);
@@ -100,7 +100,7 @@ const Winners = () => {
     };
     fetchWinner();
   }, [loading]);
-
+  
   return (
     <>
       <video
