@@ -47,7 +47,7 @@ export default function QuestionTwo() {
   
     return (
       <>
-        <h1>Who do you want to work withoutside of GA?</h1>
+        <h1>Who do you want to work with outside of GA?</h1>
         < Video />
         <div>
       
