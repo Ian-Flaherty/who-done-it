@@ -24,4 +24,9 @@
 .done {
   display: flex;
   justify-content: center;
+  background-color: black;
+  border: solid 4px;
+  border-radius: 5px;
+  margin: auto;
+  
 }

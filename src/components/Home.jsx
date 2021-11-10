@@ -74,14 +74,14 @@ const Home = () => {
         <br></br>
         <div className= 'image-and-tag' overall-winner="overall-winner">
           <img
-            style={{ width: 400, height: 400, borderRadius: 400 / 2 }}
+            style={{ width: 400, height: 400, borderRadius: 400 / 2, border: "solid purple 4px" }}
             className="home-winner-img"
             src={winner.fields?.image}
             alt="me"
             />
         </div>
           
-            <h1 className='done'>Winner Overall</h1>
+            <h1 className='done'> Winner Overall </h1>
             
       </div>
     </>
