@@ -1,0 +1,20 @@
+.classmates {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  justify-content: center;
+  margin-right: 50px;
+  margin-left: 50px;
+  
+}
+
+.pictures-of-people{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.student-image {
+  display: flex;
+  flex-wrap: wrap;
+  
+}

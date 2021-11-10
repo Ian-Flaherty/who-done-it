@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-
+import './Questions.css';
 import { useEffect, useState } from "react";
 import Video from './MusVid';
 import { Link } from "react-router-dom";
@@ -56,15 +56,16 @@ export default function QuestionTwo() {
         {classmates.map((image) => (
         
           // eslint-disable-next-line jsx-a11y/alt-text
-          <Link to='./Questionthree' onClick={handleSubmit} style={{ display: 'inline-block', width: 170, height: 170, borderRadius: 400 / 2, }}><img style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
+          <Link  to='./Questionthree' onClick={handleSubmit} style={{ display: 'inline-block', width: 170, height: 170, borderRadius: 400 / 2, }}><img className="student-image" style={{ width: 170, height: 170, borderRadius: 400 / 2 }}
             src=
               {image.fields?.image}
             title={image.id}
-          /></Link>
+            /></Link>
             
         ))}
       </div>
           </div>
+          
       </>
     )
   }

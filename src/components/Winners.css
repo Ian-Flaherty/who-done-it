@@ -10,13 +10,14 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 6vh;
-
+  
 }
 
 .block {
   width: 365px;
-  
+  margin-top: 10px;
 }
+
 .winner-tac {
   display: flex;
   align-content: center;
@@ -29,11 +30,11 @@
   margin-right: 10px;
   background-color: black;
   border: rgb(158, 9, 158) solid 4px;
-
+  
 }
 
 .Winner-Overall {
-margin-left: 85px;
-
+  margin-left: 85px;
+  
 }
 
