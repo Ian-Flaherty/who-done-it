@@ -19,13 +19,16 @@
 }
 .winner-tac {
   display: flex;
-  /* align-content: center; */
-  
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   text-align: center;
-  margin: 10px 20px;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
   background-color: black;
-  border: blueviolet solid 2px;
+  border: rgb(158, 9, 158) solid 4px;
 
 }
 

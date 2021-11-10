@@ -222,8 +222,11 @@ const Winners = () => {
           className="Winner-Overall"
           src={winnertwelve.fields?.image}
           alt="me"
-        />
-        <h3 className= 'winner-tac'>Who is the biggest Soccer fan?</h3>
+            />
+            <div className="winner-tac">
+
+        <h3 className= 'winner-tac-text'>Who is the biggest Soccer fan?</h3>
+            </div>
       </div>
         </div>
         </div>
