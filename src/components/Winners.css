@@ -9,7 +9,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 43px;
+  margin-top: 6vh;
 
 }
 
@@ -18,9 +18,15 @@
   
 }
 .winner-tac {
-  height: 75px;
+  display: flex;
+  /* align-content: center; */
+  
+  height: 50px;
   text-align: center;
   margin: 10px 20px;
+  background-color: black;
+  border: blueviolet solid 2px;
+
 }
 
 .Winner-Overall {

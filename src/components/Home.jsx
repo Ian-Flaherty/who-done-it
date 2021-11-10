@@ -42,6 +42,7 @@ const Home = () => {
       <video
         autoPlay
         loop
+        muted
         
         style={{
           position: "absolute",

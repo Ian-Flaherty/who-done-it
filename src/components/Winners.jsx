@@ -109,6 +109,7 @@ const Winners = () => {
       <video
         autoPlay
         loop
+        muted
         
         style={{
           position: "absolute",
